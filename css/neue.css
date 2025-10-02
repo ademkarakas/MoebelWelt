@@ -421,3 +421,14 @@ header.bg-dark.py-5 {
     background-color: #218838;
     border-color: #1e7e34;
 }
+
+
+.btn-green_2 {
+    background-color: #35cd59; /* dein Grün */
+    border-color: #28a745;
+    color: #fff;
+}
+.btn-green:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
