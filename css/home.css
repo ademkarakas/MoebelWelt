@@ -1,0 +1,114 @@
+
+        :root {
+            --primary-green: #2e8b57;
+            --light-green: #98fb98;
+            --dark-green: #1a5c38;
+            --accent-green: #3cb371;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .bg-dark {
+            background-color: var(--dark-green) !important;
+        }
+        
+        .btn-outline-dark {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+        }
+        
+        .btn-outline-dark:hover {
+            background-color: var(--primary-green);
+            color: white;
+        }
+        
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e9ecef;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .product-card {
+            perspective: 1000px;
+            height: 400px;
+            cursor: pointer;
+        }
+        
+        .product-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .product-card.flipped .product-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .product-card-front, .product-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .product-card-back {
+            background-color: #f8f9fa;
+            transform: rotateY(180deg);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .badge.bg-dark {
+            background-color: var(--primary-green) !important;
+        }
+        
+        .text-warning {
+            color: #ffc107 !important;
+        }
+        
+        .navbar {
+            background-color: var(--dark-green) !important;
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        
+        .nav-link:hover {
+            color: var(--light-green) !important;
+        }
+        
+        footer {
+            background-color: var(--dark-green);
+            color: white;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-green);
+            border-color: var(--primary-green);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-green);
+            border-color: var(--dark-green);
+        }
+        
+        .feature-icon {
+            color: var(--primary-green);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    
