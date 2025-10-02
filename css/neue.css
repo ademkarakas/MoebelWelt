@@ -432,3 +432,7 @@ header.bg-dark.py-5 {
     background-color: #218838;
     border-color: #1e7e34;
 }
+footer {
+            background-color: var(--dark-green);
+            color: white;
+        }
