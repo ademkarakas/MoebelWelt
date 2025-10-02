@@ -200,6 +200,7 @@ body {
 }
  
 /* === FOOTER === */
+
 .bg-dark {
   background: linear-gradient(135deg, var(--bustarf-green-dark) 0%, #0d462c 100%) !important;
 }
@@ -432,7 +433,3 @@ header.bg-dark.py-5 {
     background-color: #218838;
     border-color: #1e7e34;
 }
-footer {
-            background-color: var(--dark-green);
-            color: white;
-        }
