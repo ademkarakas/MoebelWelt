@@ -411,3 +411,13 @@ header.bg-dark.py-5 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--bustarf-green-dark);
 }
+
+.btn-green {
+    background-color: #28a745; /* dein Grün */
+    border-color: #28a745;
+    color: #fff;
+}
+.btn-green:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
