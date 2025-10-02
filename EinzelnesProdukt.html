@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Produkt – Einzelansicht</title>
+</head>
+<body>
+  <h1 id="product-title">Super Product X</h1>
+
+  <!-- Галерея изображений -->
+  <div>
+    <img id="mainImage" src="https://picsum.photos/id/1011/400/300" alt="Produktbild – Super Product X">
+    <div>
+      <img class="thumb" src="https://picsum.photos/id/1011/100/100" data-full="https://picsum.photos/id/1011/400/300" alt="Miniatur 1">
+      <img class="thumb" src="https://picsum.photos/id/1012/100/100" data-full="https://picsum.photos/id/1012/400/300" alt="Miniatur 2">
+      <img class="thumb" src="https://picsum.photos/id/1013/100/100" data-full="https://picsum.photos/id/1013/400/300" alt="Miniatur 3">
+    </div>
+  </div>
+
+  <!-- Информация о продукте -->
+  <p><strong>Preis:</strong> €129,00</p>
+  <p>Lightweight and durable product. Perfect for daily use.</p>
+
+  <!-- Кнопка "В корзину" -->
+  <button id="addToCart">In den Warenkorb legen</button>
+
+  <script>
+    // Переключение картинок
+    const main = document.getElementById('mainImage');
+    const thumbs = document.querySelectorAll('.thumb');
+    thumbs.forEach(t => {
+      t.addEventListener('click', () => {
+        main.src = t.dataset.full;
+      });
+    });
+
+    // Кнопка "В корзину"
+    document.getElementById('addToCart').addEventListener('click', () => {
+      alert('Produkt wurde in den Warenkorb gelegt ✅');
+    });
+  </script>
+</body>
+</html>
